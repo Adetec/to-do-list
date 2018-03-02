@@ -4,6 +4,7 @@ var toDoList = document.getElementById("todo-list");
 var list = [];
 var index = document.getElementsByClassName("index");
 var retrievedTasks = localStorage.getItem("tasks");
+var resetBtn = document.getElementById('reset');
 
 
 btn.addEventListener("click", function(){
@@ -37,7 +38,7 @@ function done(id){
 
 if("tasks" in localStorage){
 
-	var retrievedTasks = localStorage.getItem("tasks");
+	//var retrievedTasks = localStorage.getItem("tasks");
 
     list = JSON.parse(retrievedTasks);
     for(var i=0; i<list.length ; i++){
@@ -45,4 +46,16 @@ if("tasks" in localStorage){
 	}
 		
 }
+
+
+resetBtn.addEventListener('click',function resetList() {
+    if("tasks" in localStorage){
+
+        localStorage.removeItem('tasks');
+    }
+
+    location.reload();
+
+    
+});
 

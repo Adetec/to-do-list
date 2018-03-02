@@ -53,7 +53,27 @@ button{
     margin-left: -6px;
     font-size: 32px;
     font-weight: bold;
-    transition: background 0.3s;
+   
+}
+.container div:nth-child(1){
+    height: 30px;
+    
+}
+
+#reset{
+    background: transparent;
+    margin: 0;
+    color: red;
+    float: right;
+    border-radius: 100%;
+    font-size: 48px;
+    transition: transform 3s;
+}
+#reset:hover{
+    transform: rotate(90deg);
+    
+   
+    
 }
 
 .paper{
