@@ -59,6 +59,8 @@ button{
 .paper{
     background-image: url('../images/spring.png');
     box-shadow: 10px 10px 15px darkgray;
+    background-repeat:no-repeat; 
+    
     
 }
 
@@ -88,4 +90,35 @@ li:first-child{
 li:last-child{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 22px;
+}
+
+.index::before{
+	content: " ";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	position: absolute;
+	left: 8px;
+	top: 16px;
+	border-radius: 4px;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+}
+
+.checked{
+	text-decoration: line-through;
+    color: #3874a9;
+    
+	background: #3874a959;
+}
+.checked::before{
+    content: "\2713";
+    color: dodgerblue;
+	display: inline-block;
+	text-align: center;
+	line-height: 20px;
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+	font-weight: 600;
+    font-size: 16px;
+    font-weight: bold;
 }
