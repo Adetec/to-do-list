@@ -1,0 +1,91 @@
+
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    vertical-align: middle;
+    
+}
+body{
+    font-family: 'Handlee', cursive;
+    
+    
+}
+.container{
+    max-width: 450px;
+    height: auto;
+    padding: 30px;
+    min-height: 300px; 
+    margin: 0 auto;
+    text-align: center;
+    background: radial-gradient(circle, #ffffff, #dcdcd0, #dad6cf87);
+    border-radius: 5px;
+    
+    box-shadow: 5px 5px 15px darkgray;
+}
+
+h2{
+    font-family: arial;
+    text-align: left;
+    padding: 5px 10px;
+    color: #555;
+    
+}
+input[type=text]{
+    width: 80%;
+    padding: 15px;
+    height: 50px;
+    border: 1px solid #ccc;
+    color: #999;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+button{
+    width: 15%;
+    height: 50px;
+    border: none;
+    background: #1161b9;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    margin-left: -6px;
+    font-size: 32px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.paper{
+    background-image: url('../images/spring.png');
+    box-shadow: 10px 10px 15px darkgray;
+    
+}
+
+ul{
+    padding: 70px 20px;
+    margin: 10px 0;
+    text-align: left;
+    list-style: none;	
+}
+li{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 10px 10px 40px;
+    background: #1161b959;
+    cursor: pointer;
+    border-bottom: 1px dashed #3874a9;
+    font-size: 22px;
+    position: relative;
+    
+}
+
+li:first-child{
+    border-top-left-radius: 22px;
+    border-top-right-radius: 5px;
+}
+
+li:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 22px;
+}
