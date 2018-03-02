@@ -5,6 +5,7 @@ var list = [];
 var index = document.getElementsByClassName("index");
 var retrievedTasks = localStorage.getItem("tasks");
 var resetBtn = document.getElementById('reset');
+var audioPaper = document.getElementById('paper');
 
 
 btn.addEventListener("click", function(){
@@ -49,12 +50,15 @@ if("tasks" in localStorage){
 
 
 resetBtn.addEventListener('click',function resetList() {
+    
     if("tasks" in localStorage){
 
         localStorage.removeItem('tasks');
+        
     }
-
+    audioPaper.play();
     location.reload();
+
 
     
 });
